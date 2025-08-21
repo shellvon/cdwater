@@ -1,0 +1,100 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "成都自来水配置",
+        "description": "请输入您的用户号来配置成都自来水集成",
+        "data": {
+          "user_id": "用户号"
+        },
+        "data_description": {
+          "user_id": "通常是9位数字"
+        }
+      },
+      "captcha": {
+        "title": "验证码识别配置",
+        "description": "选择验证码识别方式",
+        "data": {
+          "captcha_method": "识别方式"
+        },
+        "data_description": {
+          "captcha_method": "选择验证码识别方式：NCC算法推荐(极速)免费但识别率较低，超级鹰API准确率高但需要付费账号"
+        }
+      },
+      "chaojiying": {
+        "title": "超级鹰配置",
+        "description": "配置超级鹰API参数",
+        "data": {
+          "chaojiying_user": "用户名",
+          "chaojiying_pass": "密码",
+          "chaojiying_softid": "软件ID"
+        },
+        "data_description": {
+          "chaojiying_user": "超级鹰账号的用户名",
+          "chaojiying_pass": "超级鹰账号的密码",
+          "chaojiying_softid": "在超级鹰用户中心生成的软件ID"
+        }
+      }
+    },
+    "error": {
+      "invalid_user_id": "用户号格式不正确，请输入数字",
+      "invalid_username": "请输入有效的用户名",
+      "invalid_password": "请输入有效的密码",
+      "invalid_softid": "请输入有效的软件ID"
+    },
+    "abort": {
+      "already_configured": "该用户号已经配置过了"
+    }
+  },
+  "selector": {
+    "captcha_method": {
+      "options": {
+        "ncc": "NCC(推荐)",
+        "chaojiying": "超级鹰API - 需付费账号"
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "成都自来水选项",
+        "description": "选择要配置的选项",
+        "menu_options": {
+          "update_interval": "更新间隔设置",
+          "captcha_settings": "验证码识别设置"
+        }
+      },
+      "update_interval": {
+        "title": "更新间隔设置",
+        "description": "配置数据更新间隔",
+        "data": {
+          "update_interval": "更新间隔（天）"
+        }
+      },
+      "captcha_settings": {
+        "title": "验证码识别设置",
+        "description": "配置验证码识别方式",
+        "data": {
+          "captcha_method": "识别方式"
+        },
+        "data_description": {
+          "captcha_method": "选择验证码识别方式：NCC算法推荐(极速)免费但识别率较低，超级鹰API准确率高但需要付费账号"
+        }
+      },
+      "chaojiying_options": {
+        "title": "超级鹰配置",
+        "description": "配置超级鹰API参数",
+        "data": {
+          "chaojiying_user": "用户名",
+          "chaojiying_pass": "密码",
+          "chaojiying_softid": "软件ID"
+        },
+        "data_description": {
+          "chaojiying_user": "超级鹰账号的用户名",
+          "chaojiying_pass": "超级鹰账号的密码",
+          "chaojiying_softid": "在超级鹰用户中心生成的软件ID"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Chengdu Water Configuration",
+        "description": "Enter your user ID to configure Chengdu Water integration",
+        "data": {
+          "user_id": "User ID"
+        },
+        "data_description": {
+          "user_id": "Usually a 9-digit number"
+        }
+      },
+      "captcha": {
+        "title": "Captcha Recognition Configuration",
+        "description": "Select captcha recognition method",
+        "data": {
+          "captcha_method": "Recognition Method"
+        },
+        "data_description": {
+          "captcha_method": "Choose captcha recognition method: NCC algorithm (recommended, fast) is free but has lower accuracy, Chaojiying API has high accuracy but requires paid account"
+        }
+      },
+      "chaojiying": {
+        "title": "Chaojiying Configuration",
+        "description": "Configure Chaojiying API parameters",
+        "data": {
+          "chaojiying_user": "Username",
+          "chaojiying_pass": "Password",
+          "chaojiying_softid": "Software ID"
+        },
+        "data_description": {
+          "chaojiying_user": "Chaojiying account username",
+          "chaojiying_pass": "Chaojiying account password",
+          "chaojiying_softid": "Software ID generated in Chaojiying user center"
+        }
+      }
+    },
+    "error": {
+      "invalid_user_id": "Invalid user ID format, please enter numbers only",
+      "invalid_username": "Please enter a valid username",
+      "invalid_password": "Please enter a valid password",
+      "invalid_softid": "Please enter a valid software ID"
+    },
+    "abort": {
+      "already_configured": "This user ID has already been configured"
+    }
+  },
+  "selector": {
+    "captcha_method": {
+      "options": {
+        "ncc": "NCC (Recommended)",
+        "chaojiying": "Chaojiying API - Paid Account Required"
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Chengdu Water Options",
+        "description": "Select options to configure",
+        "menu_options": {
+          "update_interval": "Update Interval Settings",
+          "captcha_settings": "Captcha Recognition Settings"
+        }
+      },
+      "update_interval": {
+        "title": "Update Interval Settings",
+        "description": "Configure data update interval",
+        "data": {
+          "update_interval": "Update Interval (days)"
+        }
+      },
+      "captcha_settings": {
+        "title": "Captcha Recognition Settings",
+        "description": "Configure captcha recognition method",
+        "data": {
+          "captcha_method": "Recognition Method"
+        },
+        "data_description": {
+          "captcha_method": "Choose captcha recognition method: NCC algorithm (recommended, fast) is free but has lower accuracy, Chaojiying API has high accuracy but requires paid account"
+        }
+      },
+      "chaojiying_options": {
+        "title": "Chaojiying Configuration",
+        "description": "Configure Chaojiying API parameters",
+        "data": {
+          "chaojiying_user": "Username",
+          "chaojiying_pass": "Password",
+          "chaojiying_softid": "Software ID"
+        },
+        "data_description": {
+          "chaojiying_user": "Chaojiying account username",
+          "chaojiying_pass": "Chaojiying account password",
+          "chaojiying_softid": "Software ID generated in Chaojiying user center"
+        }
+      }
+    }
+  }
+}
