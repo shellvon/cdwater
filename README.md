@@ -21,6 +21,8 @@
 
 ## 安装方法
 
+### 通过 HACS 安装（推荐）
+
 1. 确保已安装 [HACS](https://hacs.xyz/)
 2. 在 HACS 中添加自定义存储库：
    - 进入 HACS → 集成
@@ -34,9 +36,6 @@
 1. 将custom_components下的所有内容复制到 Home Assistant 的 `custom_components` 目录下
 2. 重启 Home Assistant
 3. 在集成页面添加"成都自来水"集成
-
-### 通过 HACS 安装（推荐）
-
 
 ## 配置说明
 
